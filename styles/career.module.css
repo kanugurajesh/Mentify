@@ -1,0 +1,54 @@
+.imageContainer {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.imageContainer img {
+    padding: 5px;
+    transition: ease-in-out 0.5s;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.imageSelected {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    border: 5px solid #e84949;
+    border-radius: 10px;
+}
+
+.imageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    gap: 10px;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .career {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

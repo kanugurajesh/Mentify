@@ -1,0 +1,21 @@
+#imagecontainer  {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+#imagecontainer img {
+    width: 20%;
+    height: 20%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#imagecontainer img:hover {
+    transform: scale(1.05);
+}

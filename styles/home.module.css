@@ -1,0 +1,233 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logobar {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.logoText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(74, 71, 62);
+}
+
+.img {
+    height: 45px;
+    width: 45px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    z-index: 5;
+    transform: translateY(-100px) translateZ(0px);
+    animation: 0.75s cubic-bezier(0.77, 0.2, 0.05, 1) 0.4s 1 normal forwards running navEnter;
+}
+
+.navitems {
+    display: flex;
+    gap: 70px;
+    padding: 0 4rem;
+}
+
+@keyframes navEnter {
+    100% {
+        transform: translateY(0px) translateZ(0px);
+    }
+}
+
+.herosection {
+    width: 100%;
+    height: auto;
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+.herocontent {
+    width: 70%;
+}
+
+.h1 {
+    font-family: TTCommonsProVar, sans-serif;
+    margin: 0.67em 0px;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.heroheading {
+    /* font-size: clamp(2.25rem, 1.5vw, 3rem); */
+    font-size: 2.5vh;
+    margin-bottom: 1rem;
+    transform: translateY(-50px) translateZ(0px);
+    opacity: 0;
+    animation: 1s cubic-bezier(0.77, 0.2, 0.05, 1) 0.4s 1 normal forwards running pageTitleEnter;
+}
+
+@keyframes pageTitleEnter {
+    100% {
+        opacity: 1;
+        transform: translateY(0px) translateZ(0px);
+    }
+}
+
+.wrapper {
+    transform: translateY(50px) translateZ(0px);
+    opacity: 0;
+    animation: 1s cubic-bezier(0.77, 0.2, 0.05, 1) 0.4s 1 normal forwards running infoEnter;
+}
+
+@keyframes infoEnter {
+    100% {
+        opacity: 1;
+        transform: translateY(0px) translateZ(0px);
+    }
+}
+
+.hero-sodi {
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.p {
+    max-width: 600px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+.downloadbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 75px;
+    width: 250px;
+    border-radius: 16px;
+}
+
+.heroimg {
+    /* width: 600px; */
+    /* height: 600px; */
+    /* display: grid; */
+    /* place-items: center; */
+    clip-path: polygon(0px 0px, 100% 0px, 100% 0px, 0px 0px);
+    transform: translateY(50px) scale(0.9) translateZ(0px);
+    animation: 1.1s cubic-bezier(0.77, 0.2, 0.05, 1) 0.4s 1 normal forwards running frameClip;
+}
+
+.navlist {
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding: 0.3rem 0;
+    text-decoration: none;
+    position: relative;
+    color: rgb(74, 71, 62);
+}
+
+.navlist::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.navlist:hover::before {
+    width: 100%;
+}
+
+.btnpink {
+    background-color: #e84949;
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btnpink::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.btnpink:hover::before {
+    transform: scaleX(1);
+}
+
+.btnpink:hover {
+    border: solid 3px #e84949;
+    color: black;
+}
+
+@keyframes frameClip {
+    100% {
+        transform: translateY(0px) scale(1) translateZ(0px);
+        clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .herosection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .herosection {
+        padding: 2rem clamp(1rem, 6vw, 10rem);
+        gap: 1rem;
+    }
+}
