@@ -13,26 +13,27 @@ import "@/styles/LoginFormComponent.css";
 export default function Page({ params }: { params: { name: string } }) {
 
     const name = params.name;
-    const [image, setImage] = useState("");
+    
+    // const [image, setImage] = useState("");
 
-    const getImage = async (name: string) => {
-        const response = await fetch("/api/imagen", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                name,
-            }),
-        });
+    // const getImage = async (name: string) => {
+    //     const response = await fetch("/api/imagen", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify({
+    //             name,
+    //         }),
+    //     });
 
-        const data = await response.json();
+    //     const data = await response.json();
 
-        // get imageUrl from data
-        console.log(data.imageURl);
-        setImage(data.imageURl);
-        return data;
-    }
+    //     // get imageUrl from data
+    //     console.log(data.imageURl);
+    //     setImage(data.imageURl);
+    //     return data;
+    // }
 
     const [response, setResponse] = useState("");
     const [output, setOutput] = useState("The response will appear here...");
@@ -77,7 +78,7 @@ export default function Page({ params }: { params: { name: string } }) {
         <div>
             <div className='flex flex-col items-center h-screen gap-6'>
                 <h1 className='text-4xl font-extrabold mt-1'>{name}</h1>
-                {image && <Image src={image} alt="image" width={300} height={300} />}
+                {/* {image && <Image src={image} alt="image" width={300} height={300} />} */}
                 <h1 className='text-1xl font-bold mt-1'>Creating a response for what causes and cure for <span className="text-red-500">{name}</span></h1>
                 <Card className={cn("p-5 whitespace-normal min-w-[320px] sm:w-[500px] md:min-w-[600px]")}>
                     <div className={styles.textwrapper}>
@@ -86,7 +87,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 </Card>
                 <Button onClick={() => {
                     onSubmit();
-                    getImage(name);
+                    // getImage(name);
                 }}>Get Details</Button>
             </div>
         </div>

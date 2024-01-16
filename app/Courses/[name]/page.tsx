@@ -53,6 +53,7 @@ export default function Page({ params }: { params: { name: string } }) {
 
         // get the response from the server
         const data = await response.json();
+
         // set the response in the state
         setResponse(data.text);
     };
