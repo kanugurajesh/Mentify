@@ -116,7 +116,7 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 <p align=center>Response from the llm</p>
 
-![Screenshot 2024-01-17 012241](https://github.com/kanugurajesh/Mentify/assets/77529419/b5055b25-1e5f-4f4d-b3d1-3a78f8aa1c84)
+![Screenshot 2024-01-17 012938](https://github.com/kanugurajesh/Mentify/assets/77529419/3f9e6d11-ec5e-4078-875a-b596e0bc2fa9)
 
 <p align=center>Mental health test with a interactive panda to make it look good and also promote good mental steps through it's expressions</p>
 
