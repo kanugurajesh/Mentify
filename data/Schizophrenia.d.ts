@@ -3,10 +3,10 @@ export const data = {
       {
         "question": "How would you describe your thoughts when in public or interacting with others?",
         "options": [
-          "Calm and rational",
-          "Occasionally uneasy",
-          "Frequently paranoid",
-          "Consistently experiencing hallucinations or delusions"
+          "Calm and rational+0",
+          "Occasionally uneasy+1",
+          "Frequently paranoid+2",
+          "Consistently experiencing hallucinations or delusions+3"
         ],
         "correctOption": "Consistently experiencing hallucinations or delusions"
       },
