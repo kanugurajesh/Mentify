@@ -24,8 +24,8 @@ export default function HomeLayout({
                 <div className='flex p-10 items-center justify-between font-bold'>
                     <div className='flex items-center gap-3'>
                         <Link href="/" className='flex items-center '>
-                            <Image src="/logo.png" alt="Logo" width={35} height={35} className='mr-[-2px]' />
-                            <h1 className='text-xl'>areer-Aid</h1>
+                            <Image src="/logo.png" alt="Logo" width={35} height={35} />
+                            <h1 className='text-xl'>entify</h1>
                         </Link>
                     </div>
 

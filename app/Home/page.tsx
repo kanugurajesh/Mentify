@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className="font-black text-6xl">
                     <span style={{ color: 'black', fontWeight: 'bold'}}>
                         <Typewriter
-                            words={['What is Career Aid', 'AI Based guidance']}
+                            words={['What is Mentify', 'AI Mental Support']}
                             loop={1000}
                             cursor
                             cursorStyle='_'
@@ -22,13 +22,13 @@ export default function Home() {
                         />
                     </span>
                 </h1>
-                <p className="text-xl">Career Aid is a interactive AI based model to help students choose careers and know their capabilities</p>
+                <p className="text-xl">Mentify is a ai based mental health support which leverages state of the art llms.</p>
                 <Link href="/Career" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
                     <p className={styles.p}>Get Started</p>
                 </Link>
             </div>
             <div>
-                <Image src="/careerup.png" alt="Swap ai" width={400} height={400} />
+                <Image src="/neurology.png" alt="Swap ai" width={400} height={400} />
             </div>
         </main>
     );
