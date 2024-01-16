@@ -47,7 +47,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                userPrompt: `hello I have obtained a score of ${score}/${30} in ${name} related issue based on my performance I would like to get a cure for ${name} can you suggest me a path?`,
+                userPrompt: `hello I have obtained a score of ${30 - score}/${30} in ${name} related issue based on my performance I would like to get a cure for ${name} can you suggest me a path? The lesser the score the better the precautions and cure the person should take.`,
             }),
         });
 
