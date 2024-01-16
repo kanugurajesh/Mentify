@@ -201,7 +201,7 @@ export default function Page({ params }: { params: { name: string } }) {
                         setQuestion(content?.questions[0])
                     }
                     }>Restart</Button>
-                    {score > 6 && (
+                    {score > 20 && (
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
@@ -210,7 +210,7 @@ export default function Page({ params }: { params: { name: string } }) {
                             </div>
                         </>
                     )}
-                    {score > 2 && score <= 6 && (
+                    {score > 10 && score <= 20 && (
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
@@ -219,7 +219,7 @@ export default function Page({ params }: { params: { name: string } }) {
                             </div>
                         </>
                     )}
-                    {score <= 2 && (
+                    {score <= 10 && (
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
