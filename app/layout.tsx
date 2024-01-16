@@ -6,8 +6,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Student LMS',
-  description: 'A platform to recommend personalised learning paths to students',
+  title: 'Mentify',
+  description: 'Mentify is a platform for mental health awareness and support.',
 }
 
 export default function RootLayout({
