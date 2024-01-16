@@ -98,9 +98,3 @@ If you encounter any issues or have feedback, please open an issue on our [GitHu
 ## Authors
 
 - [@kanugurajesh](https://github.com/kanugurajesh)
-
-## My Certificates
-
-![1704609064388](https://github.com/kanugurajesh/Career-Guide/assets/77529419/5b7464e9-3e89-486b-9f71-799f6ba3b2a1)
-
-![1704609079152](https://github.com/kanugurajesh/Career-Guide/assets/77529419/0b532004-5a3a-4114-91d1-b6c6c4fcc1cf)
