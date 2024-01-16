@@ -15,7 +15,7 @@ import { useRive, RiveState, useStateMachineInput, StateMachineInput, Layout, Fi
 import styles from '@/styles/styles.module.css'
 import "@/styles/LoginFormComponent.css";
 import Confetti from "@/components/Confetti";
-import Link from "next/link";
+import toast, {Toaster} from "react-hot-toast";
 
 export default function Page({ params }: { params: { name: string } }) {
 
@@ -47,7 +47,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                userPrompt: `hello I have obtained a score of ${score}/${content?.questions.length} in ${name} based on my performance I would like to learn ${name} can you suggest me a learning path?`,
+                userPrompt: `hello I have obtained a score of ${score}/${30} in ${name} related issue based on my performance I would like to get a cure for ${name} can you suggest me a path?`,
             }),
         });
 
@@ -92,7 +92,6 @@ export default function Page({ params }: { params: { name: string } }) {
     // State Machine Inputs
     const trigSuccessInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'trigSuccess');
     const trigFailInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'trigFail');
-    const isHandsUpInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'isHandsUp');
 
     // read the file from the file system with the `name`
     const readFile = async (name: string) => {
@@ -102,12 +101,19 @@ export default function Page({ params }: { params: { name: string } }) {
 
     const onNext = () => {
 
+        if (!chosen) {
+            toast.error("Please select an option")
+            return
+        }
+
         setProgress(progress + 10)
 
         setCount(count + 1)
 
-        if (question?.correctOption == chosen) {
-            setScore(score + 1)
+        let currentScore = parseInt(chosen.split('+')[1])
+        setScore(score + currentScore)
+
+        if (question?.correctOption == chosen.split('+')[0]) {
             trigSuccessInput.fire()
         } else {
             trigFailInput.fire()
@@ -115,6 +121,7 @@ export default function Page({ params }: { params: { name: string } }) {
 
         setQuestion(content?.questions[count + 1])
 
+        setChosen("")
 
         if (progress >= 100) {
             onSubmit()
@@ -138,6 +145,7 @@ export default function Page({ params }: { params: { name: string } }) {
 
     return (
         <div className="around">
+            <Toaster />
             {progress < 110 ? (
                 <>
                     <div className="rive-container">
@@ -156,25 +164,25 @@ export default function Page({ params }: { params: { name: string } }) {
                                 <RadioGroupItem value={question?.options[0]} id="r1" onClick={(e) => {
                                     setChosen(e.target.value)
                                 }} />
-                                <Label htmlFor="r1">{question?.options[0]}</Label>
+                                <Label htmlFor="r1">{question?.options[0].split('+')[0]}</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value={question?.options[1]} id="r2" onClick={(e) => {
                                     setChosen(e.target.value)
                                 }} />
-                                <Label htmlFor="r2">{question?.options[1]}</Label>
+                                <Label htmlFor="r2">{question?.options[1].split('+')[0]}</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value={question?.options[2]} id="r3" onClick={(e) => {
                                     setChosen(e.target.value)
                                 }} />
-                                <Label htmlFor="r3">{question?.options[2]}</Label>
+                                <Label htmlFor="r3">{question?.options[2].split('+')[0]}</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <RadioGroupItem value={question?.options[3]} id="r4" onClick={(e) => {
                                     setChosen(e.target.value)
                                 }} />
-                                <Label htmlFor="r4">{question?.options[3]}</Label>
+                                <Label htmlFor="r4">{question?.options[3].split('+')[0]}</Label>
                             </div>
                         </RadioGroup>
                         <Button onClick={() => {
