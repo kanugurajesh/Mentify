@@ -3,92 +3,92 @@ export const data = {
         {
             "question": "How would you describe your thoughts when in public or interacting with others?",
             "options": [
-                "Calm and self-assured",
-                "Occasionally uneasy",
-                "Frequently doubtful",
-                "Consistently experiencing low self-confidence"
+                "Calm and self-assured+0",
+                "Occasionally uneasy+1",
+                "Frequently doubtful+2",
+                "Consistently experiencing low self-confidence+3"
             ],
-            "correctOption": "Consistently experiencing low self-confidence"
+            "correctOption": "Calm and self-assured"
         },
         {
             "question": "How often do you find yourself doubting your abilities without clear evidence?",
             "options": [
-                "Rarely or never",
-                "Occasionally",
-                "Frequently",
-                "Regularly, leading to persistent self-doubt"
+                "Rarely or never+0",
+                "Occasionally+1",
+                "Frequently+2",
+                "Regularly, leading to persistent self-doubt+3"
             ],
-            "correctOption": "Regularly, leading to persistent self-doubt"
+            "correctOption": "Rarely or never"
         },
         {
             "question": "Do you often feel that others have more confidence in their abilities than you do?",
             "options": [
-                "Never",
-                "Occasionally",
-                "Frequently",
-                "Always experiencing low confidence in comparison"
+                "Never+0",
+                "Occasionally+1",
+                "Frequently+2",
+                "Always experiencing low confidence in comparison+3"
             ],
-            "correctOption": "Always experiencing low confidence in comparison"
+            "correctOption": "Never"
         },
         {
             "question": "How long do episodes of self-doubt or low self-confidence typically last?",
             "options": [
-                "A few minutes",
-                "Several minutes",
-                "Half an hour or more",
-                "Varies, leading to persistent lack of confidence"
+                "A few minutes+0",
+                "Several minutes+1",
+                "Half an hour or more+2",
+                "Varies, leading to persistent lack of confidence+3"
             ],
-            "correctOption": "Varies, leading to persistent lack of confidence"
+            "correctOption": "A few minutes"
         },
         {
             "question": "Have you sought professional help or been diagnosed with self-confidence or self-esteem issues?",
             "options": [
-                "Yes",
-                "Considering it",
-                "No, not yet",
-                "No, and I don't plan to"
+                "Yes+0",
+                "Considering it+1",
+                "No, not yet+2",
+                "No, and I don't plan to+3"
             ],
-            "correctOption": "Considering it"
+            "correctOption": "Yes"
         },
         {
             "question": "Do these experiences of low self-confidence impact your daily life, relationships, or activities?",
             "options": [
-                "Low impact",
-                "Moderate impact",
-                "High impact",
-                "Very high impact"
+                "Low impact+0",
+                "Moderate impact+1",
+                "High impact+2",
+                "Very high impact+3"
             ],
-            "correctOption": "Very high impact"
+            "correctOption": "Low impact"
         },
         {
             "question": "Have others expressed concern about your experiences of persistent self-doubt or low self-confidence?",
             "options": [
-                "Never",
-                "Rarely",
-                "Sometimes",
-                "Frequently"
+                "Never+0",
+                "Rarely+1",
+                "Sometimes+2",
+                "Frequently+3"
             ],
-            "correctOption": "Frequently"
+            "correctOption": "Never"
         },
         {
             "question": "Do you believe that addressing and improving self-confidence is important for overall well-being?",
             "options": [
-                "Strongly agree",
-                "Agree",
-                "Neutral",
-                "Disagree"
+                "Strongly agree+0",
+                "Agree+1",
+                "Neutral+2",
+                "Disagree+3"
             ],
             "correctOption": "Strongly agree"
         },
         {
             "question": "How long have you been experiencing persistent self-doubt or low self-confidence?",
             "options": [
-                "A short period",
-                "Several months",
-                "Years",
-                "I haven't experienced persistent self-doubt or low self-confidence"
+                "A short period+0",
+                "Several months+1",
+                "Years+2",
+                "I haven't experienced persistent self-doubt or low self-confidence+3"
             ],
-            "correctOption": "Years"
+            "correctOption": "A short period"
         }
     ]
 }
