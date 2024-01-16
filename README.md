@@ -91,15 +91,27 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-16 213157](https://github.com/kanugurajesh/Mentify/assets/77529419/07f2dab7-1f1e-431a-8499-1db46e63a06f)
 
+<p align=center>Virtual Therapist</p>
+
 ![Screenshot 2024-01-16 213204](https://github.com/kanugurajesh/Mentify/assets/77529419/09463462-81f7-480a-9e05-17d8b006e6ba)
+
+<p align=center>Image based disease prediction, question / answer and personalized health recommendation</p>
 
 ![Screenshot 2024-01-16 213225](https://github.com/kanugurajesh/Mentify/assets/77529419/68230eb8-ab3b-4cbc-94fd-97b2f41cfe91)
 
+<p align=center>Notification system</p>
+
 ![Screenshot 2024-01-16 213235](https://github.com/kanugurajesh/Mentify/assets/77529419/12a4577e-c19f-4cc2-9ab8-d04c297df89e)
+
+<p align=center>Notification System</p>
 
 ![Screenshot 2024-01-16 213243](https://github.com/kanugurajesh/Mentify/assets/77529419/f569e78e-89be-4298-9bc6-506631729833)
 
+<p align=center>Guidance for the disease you have selected</p>
+
 ![Screenshot 2024-01-16 213410](https://github.com/kanugurajesh/Mentify/assets/77529419/1d32da9b-626e-47bf-aed0-c480d430021a)
+
+<p align=center>Response from the llm</p>
 
 ![Screenshot 2024-01-16 213425](https://github.com/kanugurajesh/Mentify/assets/77529419/94a0334c-0435-4875-9e0c-a805c5a906d9)
 
