@@ -1,4 +1,4 @@
-# Career Aid
+# Mentify
 
 #### 🌟 star this repo if you like it
 
