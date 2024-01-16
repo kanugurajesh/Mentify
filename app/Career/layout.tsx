@@ -24,7 +24,7 @@ export default function HomeLayout({
                 <div className='flex p-10 items-center justify-between font-bold'>
                     <div className='flex items-center gap-3'>
                         <Link href="/" className='flex items-center '>
-                            <Image src="/logo.png" alt="Logo" width={35} height={35} />
+                            <Image src="/logo.png" alt="Logo" width={35} height={35} className='mr-[0.8px]' />
                             <h1 className='text-xl'>entify</h1>
                         </Link>
                     </div>
@@ -47,7 +47,7 @@ export default function HomeLayout({
                                 <Link href="/Chat" className={`${styles.a}`}>Council</Link>
                             </li>
                             <li>
-                                <Link href="https://kanugurajesh.github.io" className={`${styles.a}`}>Blog</Link>
+                                <Link href="https://kanugurajesh.github.io/Healthify" className={`${styles.a}`}>Blog</Link>
                             </li>
                         </ul>
                         <UserButton />
