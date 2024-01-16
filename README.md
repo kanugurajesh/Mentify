@@ -30,6 +30,9 @@ An Innovative AI-powered solution that addresses critical challenges in Healthca
 - Leveraging the power of llms to provide latest information
 - Tests to predict mental condition and it's current stage
 - Using Image Rekog to predict the disease by providing the photos of it's symptoms or also getting information about a medicinal drug from it's photo
+- Dark white mode toggle
+- The llm model used in the application can be trained easily through makersuite making it flexible and powerful
+- Information is always updated becaused we are using gemini pro which has access to internet due to which the system provides correct and quality responses.
 
 ## Project Setup
 
