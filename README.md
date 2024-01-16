@@ -16,23 +16,61 @@ An Innovative AI-powered solution that addresses critical challenges in Healthca
 
 ## Features
 
-- Mental health evaluation
-- Mental health guidance
-- Chat Councillar
-- Virtual Therapist
-- Swap Image to improve imagination
-- Blog related to mental health
-- Contact system to get help
-- Good Authentication system
-- Promoting Mental health throught interactive elements like (panda) and providing award system based on their precautions and approach towards the mental condition
-- Personlized health recommendation based on their precautions and appraoch towards the mental condition
-- Personalized health recommendation and question anwering based on their medical history and health realated documents
-- Leveraging the power of llms to provide latest information
-- Tests to predict mental condition and it's current stage
-- Using Image Rekog to predict the disease by providing the photos of it's symptoms or also getting information about a medicinal drug from it's photo
-- Dark white mode toggle
-- The llm model used in the application can be trained easily through makersuite making it flexible and powerful
-- Information is always updated because we are using gemini pro which has access to internet due to which the system provides correct and quality responses.
+### 1. Virtual Therapy 🤖🗣️
+
+Connect with our Chat Counselor, your virtual therapist, for personalized mental health sessions. Discuss your thoughts and feelings in a safe and supportive environment.
+
+### 2. Imagination Enhancement 🌌🔄
+
+Boost your creativity by swapping images to stimulate your imagination. Unleash your mind's potential and explore new perspectives.
+
+### 3. Mental Health Blog 📚🧘‍♂️
+
+Stay informed and inspired with our blog. Read insightful articles on mental health, coping mechanisms, and success stories. Join the conversation and share your thoughts!
+
+### 4. Contact System 📞💬
+
+Reach out for help easily with our integrated contact system. Connect with professionals or support groups to get the assistance you need.
+
+### 5. Robust Authentication 🔒🛡️
+
+Rest easy knowing your data is secure. Our strong authentication system ensures your privacy is prioritized.
+
+### 6. Interactive Elements 🐼🌟
+
+Meet our friendly panda mascot and earn awards based on your proactive approach to mental health. Engage with interactive elements to make your mental health journey enjoyable.
+
+### 7. Personalized Recommendations 📋💡
+
+Receive tailored health recommendations based on your precautions and approach towards mental well-being. Our system adapts to your unique needs.
+
+### 8. Health History Integration 📂🩺
+
+Answer questions and receive personalized recommendations based on your medical history and health-related documents. Your journey, your way.
+
+### 9. LLMs for Latest Information 🧠📚
+
+Leverage the power of Large Language Models (LLMs) to access the latest information on mental health. Stay updated with accurate and relevant content.
+
+### 10. Mental Health Tests 📊🧐
+
+Take tests designed to predict your mental condition and its current stage. Gain insights into your emotional well-being and track your progress.
+
+### 11. Image Recognition for Health 📸💊
+
+Use Image Recognition to predict diseases by providing photos of symptoms. Obtain information about medicinal drugs from images. Empower yourself with visual health insights.
+
+### 12. Dark & Light Modes 🌗🌓
+
+Toggle between dark and light modes for a personalized visual experience. Choose what suits your mood and enhances your interaction with the platform.
+
+### 13. Flexible Training with Makersuite 🛠️🔄
+
+Easily train the LLM model through Makersuite, making our platform flexible and powerful. Customize your experience to match your evolving needs.
+
+### 14. Gemini Pro for Updated Information 🌐🔄
+
+Access the internet seamlessly with Gemini Pro to ensure our system provides correct and quality responses. Stay informed with real-time data.
 
 ## Project Setup
 
