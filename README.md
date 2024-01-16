@@ -115,9 +115,17 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-16 213425](https://github.com/kanugurajesh/Mentify/assets/77529419/94a0334c-0435-4875-9e0c-a805c5a906d9)
 
+<p align=center>Mental health test with a interactive panda to make it look good and also promote good mental steps through it's expressions</p>
+
 ![Screenshot 2024-01-16 213448](https://github.com/kanugurajesh/Mentify/assets/77529419/228e51a8-d103-4e6a-8b0b-31421d4b0f8a)
 
+<p align=center>Panda smiles if you are following the correct steps and proper cure</p>
+
 ![Screenshot 2024-01-16 213454](https://github.com/kanugurajesh/Mentify/assets/77529419/658df41d-73fa-4b20-bfed-a1db693af61c)
+
+<p align=center>Panda gets sad when you are following wrong steps and further deteriorating your health</p>
+
+<p align=center>Reward System and personalized health recommendation based on your test results</p>
 
 ![Screenshot 2024-01-16 214202](https://github.com/kanugurajesh/Mentify/assets/77529419/0ef9902f-66f3-484d-a07f-966411094b74)
 
