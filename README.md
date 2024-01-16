@@ -28,6 +28,8 @@ An Innovative AI-powered solution that addresses critical challenges in Healthca
 - Personlized health recommendation based on their precautions and appraoch towards the mental condition
 - Personalized health recommendation and question anwering based on their medical history and health realated documents
 - Leveraging the power of llms to provide latest information
+- Tests to predict mental condition and it's current stage
+- Using Image Rekog to predict the disease by providing the photos of it's symptoms or also getting information about a medicinal drug from it's photo
 
 ## Project Setup
 
