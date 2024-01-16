@@ -23,7 +23,7 @@ export default function Home() {
                     </span>
                 </h1>
                 <p className="text-xl">Mentify is a platform for mental health awareness and support.</p>
-                <Link href="/Career" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
+                <Link href="/Guide-Eval" className={`font-bold text-xl max-w-max py-3 px-10 rounded-sm transition-all ease-in-out duration-400 ${styles.button} relative`}>
                     <p className={styles.p}>Get Started</p>
                 </Link>
             </div>
