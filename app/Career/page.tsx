@@ -73,15 +73,15 @@ export default function Career() {
                 <Image src="/icons/weight-loss.png" alt="WeightLoss" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/loneliness.png" alt="Loneliness" width={80} height={80} onClick={handleClick} />
                 <Image src="/icons/fear.png" alt="Fear" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/insomnia.png" alt="DeveloperOperations" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/listen.png" alt="Cybersecurity" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/panic-attack.png" alt="DataAnalysis" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/paranoia.png" alt="DataScience" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/phobia.png" alt="ArtificialIntelligence" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/psychosis.png" alt="SoftwareTesting" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/schizophrenia.png" alt="Hacking" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/self-confidence.png" alt="Opensource" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/self-harm.png" alt="BlockchainDevelopment" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/insomnia.png" alt="Insomnia" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/listen.png" alt="HearingVoices" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/panic-attack.png" alt="PanicAttack" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/paranoia.png" alt="Paranoia" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/phobia.png" alt="Phobia" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/psychosis.png" alt="Psychosis" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/schizophrenia.png" alt="Schizophrenia" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/self-confidence.png" alt="SelfConfidence" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/self-harm.png" alt="SelfHarm" width={80} height={80} onClick={handleClick} />
             </div>
             <div className={`${styles.imageContent}`}>
                 <h1 className={`${styles.h1}`}>{selectedCareer}</h1>
