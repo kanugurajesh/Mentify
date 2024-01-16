@@ -41,10 +41,10 @@ export default function HomeLayout({
                                 <Link href="/Home" className={`${styles.a}`}>Home</Link>
                             </li>
                             <li>
-                                <Link href="/Therapy" className={`${styles.a}`}>Therapy</Link>
+                                <Link href="/Therapy" className={`${styles.a}`}>Therapist</Link>
                             </li>
                             <li>
-                                <Link href="/Chat" className={`${styles.a}`}>Council</Link>
+                                <Link href="https://kanugurajesh-document-qa-app-8ft9g0.streamlit.app/" className={`${styles.a}`}>Health-Q/A</Link>
                             </li>
                             <li>
                                 <Link href="/ImageRekog" className={`${styles.a}`}>Rekog</Link>
