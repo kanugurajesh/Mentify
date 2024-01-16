@@ -109,6 +109,10 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-16 214202](https://github.com/kanugurajesh/Mentify/assets/77529419/0ef9902f-66f3-484d-a07f-966411094b74)
 
+<p align=center>Upload your medical history documents and you will be able to know more about your condition and also get personalized health recommendations</p>
+
+![Screenshot 2024-01-17 003849](https://github.com/kanugurajesh/Mentify/assets/77529419/ca29b6de-59a3-4ce3-b451-061083be1bb8)
+
 ## Demo
 ### Click on the below image to see the video
 
