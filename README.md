@@ -54,15 +54,23 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ![Screenshot 2024-01-16 213035](https://github.com/kanugurajesh/Mentify/assets/77529419/3a1da53f-8cc9-4235-9df0-d3fd5b6c6f70)
 
-<p align=center>Home Page</p>
+<p align=center>Ai Chatbot which acts as a counsellar</p>
 
 ![Screenshot 2024-01-16 213052](https://github.com/kanugurajesh/Mentify/assets/77529419/e59f0251-8a87-422d-af07-79321674f553)
 
+<p align=center>A Blog where people write about mental health</p>
+
 ![Screenshot 2024-01-16 213058](https://github.com/kanugurajesh/Mentify/assets/77529419/4759ad78-7675-4692-a45f-4a40f5ac71b0)
+
+<p align=center>User Management</p>
 
 ![Screenshot 2024-01-16 213123](https://github.com/kanugurajesh/Mentify/assets/77529419/44778124-1883-4bc0-a2da-9f52e6a7bd52)
 
+<p align=center>Contact Form</p>
+
 ![Screenshot 2024-01-16 213138](https://github.com/kanugurajesh/Mentify/assets/77529419/67ceee10-e1b1-4db3-90f0-98c96ca8c120)
+
+<p align=center>Mental Health Choose</p>
 
 ![Screenshot 2024-01-16 213157](https://github.com/kanugurajesh/Mentify/assets/77529419/07f2dab7-1f1e-431a-8499-1db46e63a06f)
 
