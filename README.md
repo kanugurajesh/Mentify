@@ -7,7 +7,12 @@
 </div>
 
 ## Problem Statement
-Making career choices and AI based counselling accessible to every child at secondary level along with aptitude tests and detailed career paths.
+An Innovative AI-powered solution that addresses critical challenges in Healthcare and Well-Being. This advanced system has the capability to continuously gather and analyze a diverse array of healthcare data while promoting healthy lifestyles and wellness practices. This application achieves following objectives:
+
+- Personalized Healthcare:
+- Mental Health Support:
+- Health Equity:
+- Wellness Promotion:
 
 ## Solution Statement
 A web based AI integrated platform to provide career counselling  and help students evaluate their skills and then choose a path
