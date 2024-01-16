@@ -57,7 +57,7 @@ export default function RootLayout({
                     <Link href="/Chat" className={`${styles.a}`}>Council</Link>
                   </li>
                   <li>
-                    <Link href="https://kanugurajesh.github.io/Healthify" className={`${styles.a}`}>Blog</Link>
+                    <Link href="https://kanugurajesh.github.io/MentifyBlog" className={`${styles.a}`}>Blog</Link>
                   </li>
                 </ul>
                 <UserButton />
