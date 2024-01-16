@@ -36,13 +36,25 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 # The application will run on http://localhost:3000
 ```
 
+## Screenshots
+
+<p align=center>Splash screen</p>
+
 ![Screenshot 2024-01-05 050409](https://github.com/kanugurajesh/Career-Guide/assets/120458029/bf3c4afc-7515-4725-9796-8cf737ba4a86)
+
+<p align=center>Authentication Page</p>
 
 ![Screenshot 2024-01-05 050438](https://github.com/kanugurajesh/Career-Guide/assets/120458029/5243d8b0-4f9d-47d8-a36f-7f467ebb6dfb)
 
+<p align=center>Home Page</p>
+
 ![Screenshot 2024-01-16 213022](https://github.com/kanugurajesh/Mentify/assets/77529419/75086bed-08b1-444f-8e9c-d8959f596fbe)
 
+<p align=center>Imagine yourself to improve your mental condition</p>
+
 ![Screenshot 2024-01-16 213035](https://github.com/kanugurajesh/Mentify/assets/77529419/3a1da53f-8cc9-4235-9df0-d3fd5b6c6f70)
+
+<p align=center>Home Page</p>
 
 ![Screenshot 2024-01-16 213052](https://github.com/kanugurajesh/Mentify/assets/77529419/e59f0251-8a87-422d-af07-79321674f553)
 
