@@ -66,22 +66,22 @@ export default function Career() {
         <main className={`p-10 flex mt-10 ${styles.career} w-full`}>
             <Toaster />
             <div className={`${styles.imageContainer}`}>
-                <Image src="/icons/uiux.png" alt="UserExperience" width={80} height={80} onClick={handleClick} defaultValue="ux" />
-                <Image src="/icons/ui-design.png" alt="FrontendDevelopment" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/backend.png" alt="BackendDevelopment" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/database.png" alt="DatabaseEngineering" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/git.png" alt="GitVersionControl" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/fullstack.png" alt="FullstackDevelopment" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/server.png" alt="CloudPlatform" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/devops.png" alt="DeveloperOperations" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/cyber-security.png" alt="Cybersecurity" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/analysis.png" alt="DataAnalysis" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/data-science.png" alt="DataScience" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/ai.png" alt="ArtificialIntelligence" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/testing.png" alt="SoftwareTesting" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/hacker.png" alt="Hacking" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/open-source.png" alt="Opensource" width={80} height={80} onClick={handleClick} />
-                <Image src="/icons/blockchain.png" alt="BlockchainDevelopment" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/anger.png" alt="Anger" width={80} height={80} onClick={handleClick}/>
+                <Image src="/icons/anxiety.png" alt="Anxiety" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/bipolar.png" alt="Bipolar" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/depression.png" alt="Depression" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/weight-loss.png" alt="WeightLoss" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/loneliness.png" alt="Loneliness" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/fear.png" alt="Fear" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/insomnia.png" alt="DeveloperOperations" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/listen.png" alt="Cybersecurity" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/panic-attack.png" alt="DataAnalysis" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/paranoia.png" alt="DataScience" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/phobia.png" alt="ArtificialIntelligence" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/psychosis.png" alt="SoftwareTesting" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/schizophrenia.png" alt="Hacking" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/self-confidence.png" alt="Opensource" width={80} height={80} onClick={handleClick} />
+                <Image src="/icons/self-harm.png" alt="BlockchainDevelopment" width={80} height={80} onClick={handleClick} />
             </div>
             <div className={`${styles.imageContent}`}>
                 <h1 className={`${styles.h1}`}>{selectedCareer}</h1>
