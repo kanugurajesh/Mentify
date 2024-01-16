@@ -193,7 +193,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 </>
             ) : (
                 <div className='flex flex-col items-center h-screen gap-6'>
-                    <h1 className='text-2xl mt-2 font-bold'>You scored {score} out of {content?.questions.length}</h1>
+                    <h1 className='text-2xl mt-2 font-bold'>You scored {score} out of {30}</h1>
                     <Button onClick={() => {
                         setProgress(10)
                         setScore(0)
