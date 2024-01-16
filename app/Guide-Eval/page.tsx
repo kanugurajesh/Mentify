@@ -51,7 +51,7 @@ export default function Career() {
             toast.error('Please select a career')
             return;
         }
-        router.push(`/Career/GetGuidance/${selectedCareer}`)
+        router.push(`/Guide-Eval/GetGuidance/${selectedCareer}`)
     }
 
     const handleEvaluate = () => {
