@@ -3,12 +3,12 @@ export const data = {
     {
       "question": "How would you describe your thoughts when in public or interacting with others?",
       "options": [
-        "Calm and rational",
-        "Occasionally suspicious",
-        "Frequently paranoid",
-        "Consistently paranoid"
+        "Calm and rational+0",
+        "Occasionally suspicious+1",
+        "Frequently paranoid+2",
+        "Consistently paranoid+3"
       ],
-      "correctOption": "Consistently paranoid"
+      "correctOption": "Calm and rational"
     },
     {
       "question": "How often do you find yourself distrusting the intentions of others without clear evidence?",
@@ -18,7 +18,7 @@ export const data = {
         "Frequently",
         "Regularly, leading to paranoid thoughts"
       ],
-      "correctOption": "Regularly, leading to paranoid thoughts"
+      "correctOption": "Rarely or never"
     },
     {
       "question": "Do you often feel that others are plotting against you or trying to harm you in some way?",
