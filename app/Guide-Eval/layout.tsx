@@ -41,13 +41,13 @@ export default function HomeLayout({
                                 <Link href="/Home" className={`${styles.a}`}>Home</Link>
                             </li>
                             <li>
-                                <Link href="/Imagine" className={`${styles.a}`}>Imagine</Link>
+                                <Link href="/Therapy" className={`${styles.a}`}>Therapy</Link>
                             </li>
                             <li>
                                 <Link href="/Chat" className={`${styles.a}`}>Council</Link>
                             </li>
                             <li>
-                                <Link href="https://kanugurajesh.github.io/MentifyBlog" className={`${styles.a}`}>Blog</Link>
+                                <Link href="/ImageRekog" className={`${styles.a}`}>Rekog</Link>
                             </li>
                         </ul>
                         <UserButton />

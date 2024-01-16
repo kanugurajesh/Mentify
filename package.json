@@ -32,6 +32,7 @@
     "react-hot-toast": "^2.4.1",
     "react-markdown": "^9.0.1",
     "react-simple-typewriter": "^5.0.1",
+    "react-spinners": "^0.13.8",
     "replicate": "^0.25.2",
     "resend": "^2.1.0",
     "rive-react": "^4.6.2",
