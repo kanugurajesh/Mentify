@@ -6,13 +6,25 @@
   <img src="https://github.com/kanugurajesh/Mentify/assets/77529419/ee204ef3-64de-44fa-85ab-3764c4196b03" width=150 height=150>
 </div>
 
-## Project Moto
-An Innovative AI-powered solution that addresses critical challenges in Healthcare and Well-Being. This advanced system has the capability to continuously gather and analyze a diverse array of healthcare data while promoting healthy lifestyles and wellness practices. This application achieves following objectives:
+<br>
 
-- Personalized Healthcare:
-- Mental Health Support:
-- Health Equity:
-- Wellness Promotion:
+# Project Moto 🚀
+
+Welcome to Project Moto, an innovative AI-powered solution revolutionizing healthcare and well-being. Our advanced system is designed to tackle critical challenges by continuously gathering and analyzing diverse healthcare data while promoting healthy lifestyles and wellness practices. 🏥💻
+
+## Objectives:
+
+### 1. Personalized Healthcare 🌐
+Empower individuals with personalized healthcare solutions tailored to their unique needs. Our AI-driven technology ensures that healthcare recommendations are specific and effective, enhancing overall well-being.
+
+### 2. Mental Health Support 💭
+Prioritize mental health by incorporating cutting-edge AI algorithms to provide timely and personalized mental health support. We aim to break barriers and foster a supportive environment for mental well-being.
+
+### 3. Health Equity 🌍
+Addressing disparities in healthcare access and outcomes is at the core of Project Moto. Our system works towards achieving health equity by considering diverse demographic factors and ensuring fair distribution of resources and support.
+
+### 4. Wellness Promotion 🏋️‍♂️
+Promote and encourage healthy lifestyles through data-driven insights and personalized wellness plans. Project Moto is committed to empowering users to make informed choices that contribute to their overall health and happiness.
 
 ## Features
 
@@ -71,6 +83,8 @@ Easily train the LLM model through Makersuite, making our platform flexible and 
 ### 14. Gemini Pro for Updated Information 🌐🔄
 
 Access the internet seamlessly with Gemini Pro to ensure our system provides correct and quality responses. Stay informed with real-time data.
+
+<br>
 
 ## Project Setup
 
