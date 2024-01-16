@@ -1,16 +1,18 @@
-# Career Aid
+# Mentify
 
 #### 🌟 star this repo if you like it
 
 <div align=center>
-  <img src="https://github.com/kanugurajesh/Career-Guide/assets/120458029/17388695-02cb-4463-ab0b-44b50b4dfef2" width=150 height=150>
+  <img src="https://github.com/kanugurajesh/Mentify/assets/77529419/ee204ef3-64de-44fa-85ab-3764c4196b03" width=150 height=150>
 </div>
 
-## Problem Statement
-Making career choices and AI based counselling accessible to every child at secondary level along with aptitude tests and detailed career paths.
+## Project Moto
+An Innovative AI-powered solution that addresses critical challenges in Healthcare and Well-Being. This advanced system has the capability to continuously gather and analyze a diverse array of healthcare data while promoting healthy lifestyles and wellness practices. This application achieves following objectives:
 
-## Solution Statement
-A web based AI integrated platform to provide career counselling  and help students evaluate their skills and then choose a path
+- Personalized Healthcare:
+- Mental Health Support:
+- Health Equity:
+- Wellness Promotion:
 
 ## Project Setup
 
