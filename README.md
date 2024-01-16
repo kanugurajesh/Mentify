@@ -14,6 +14,17 @@ An Innovative AI-powered solution that addresses critical challenges in Healthca
 - Health Equity:
 - Wellness Promotion:
 
+## Features
+
+- Mental health evaluation
+- Mental health guidance
+- Chat Councillar
+- Virtual Therapist
+- Swap Image to improve imagination
+- Blog related to mental health
+- Contact system to get help
+- Good Authentication system
+
 ## Project Setup
 
 ```bash
