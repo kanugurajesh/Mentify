@@ -48,7 +48,7 @@ export const data = {
         "No, not yet+1",
         "No, and I don't plan to+0"
       ],
-      "correctOption": "Considering it"
+      "correctOption": "Yes"
     },
     {
       "question": "Do these panic attacks impact your daily life, relationships, or activities?",
@@ -58,7 +58,7 @@ export const data = {
         "High impact+2",
         "Very high impact+3"
       ],
-      "correctOption": "Very high impact"
+      "correctOption": "Low impact"
     },
     {
       "question": "Have others expressed concern about your experiences of sudden and intense fear or panic?",
@@ -68,7 +68,7 @@ export const data = {
         "Sometimes+2",
         "Frequently+3"
       ],
-      "correctOption": "Frequently"
+      "correctOption": "Never"
     },
     {
       "question": "Do you believe that addressing and managing panic attacks is important for overall well-being?",
@@ -88,7 +88,7 @@ export const data = {
         "Years+2",
         "I haven't experienced episodes of intense fear or panic attacks+3"
       ],
-      "correctOption": "Years"
+      "correctOption": "A short period"
     }
   ]
 }

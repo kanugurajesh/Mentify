@@ -13,82 +13,82 @@ export const data = {
     {
       "question": "How often do you find yourself distrusting the intentions of others without clear evidence?",
       "options": [
-        "Rarely or never",
-        "Occasionally",
-        "Frequently",
-        "Regularly, leading to paranoid thoughts"
+        "Rarely or never+0",
+        "Occasionally+1",
+        "Frequently+2",
+        "Regularly, leading to paranoid thoughts+3"
       ],
       "correctOption": "Rarely or never"
     },
     {
       "question": "Do you often feel that others are plotting against you or trying to harm you in some way?",
       "options": [
-        "Never",
-        "Occasionally",
-        "Frequently",
-        "Always experiencing paranoid thoughts"
+        "Never+0",
+        "Occasionally+1",
+        "Frequently+2",
+        "Always experiencing paranoid thoughts+3"
       ],
-      "correctOption": "Always experiencing paranoid thoughts"
+      "correctOption": "Never"
     },
     {
       "question": "How long do these episodes of paranoid thoughts typically last?",
       "options": [
-        "A few minutes",
-        "Several minutes",
-        "Half an hour or more",
-        "Varies, leading to persistent paranoid thoughts"
+        "A few minutes+0",
+        "Several minutes+1",
+        "Half an hour or more+2",
+        "Varies, leading to persistent paranoid thoughts+3"
       ],
-      "correctOption": "Varies, leading to persistent paranoid thoughts"
+      "correctOption": "A few minutes"
     },
     {
       "question": "Have you sought professional help or been diagnosed with paranoia or paranoid personality disorder?",
       "options": [
-        "Yes",
-        "Considering it",
-        "No, not yet",
-        "No, and I don't plan to"
+        "Yes+0",
+        "Considering it+1",
+        "No, not yet+2",
+        "No, and I don't plan to+3"
       ],
-      "correctOption": "Considering it"
+      "correctOption": "Yes"
     },
     {
       "question": "Do these paranoid thoughts impact your daily life, relationships, or activities?",
       "options": [
-        "Low impact",
-        "Moderate impact",
-        "High impact",
-        "Very high impact"
+        "Low impact+0",
+        "Moderate impact+1",
+        "High impact+2",
+        "Very high impact+3"
       ],
-      "correctOption": "Very high impact"
+      "correctOption": "Low impact"
     },
     {
       "question": "Have others expressed concern about your experiences of persistent paranoid thoughts?",
       "options": [
-        "Never",
-        "Rarely",
-        "Sometimes",
-        "Frequently"
+        "Never+0",
+        "Rarely+1",
+        "Sometimes+2",
+        "Frequently+3"
       ],
-      "correctOption": "Frequently"
+      "correctOption": "Never"
     },
     {
       "question": "Do you believe that addressing and managing paranoid thoughts is important for overall well-being?",
       "options": [
-        "Strongly agree",
-        "Agree",
-        "Neutral",
-        "Disagree"
+        "Strongly agree+0",
+        "Agree+1",
+        "Neutral+2",
+        "Disagree+3"
       ],
       "correctOption": "Strongly agree"
     },
     {
       "question": "How long have you been experiencing persistent paranoid thoughts?",
       "options": [
-        "A short period",
-        "Several months",
-        "Years",
-        "I haven't experienced persistent paranoid thoughts"
+        "A short period+0",
+        "Several months+1",
+        "Years+2",
+        "I haven't experienced persistent paranoid thoughts+3"
       ],
-      "correctOption": "Years"
+      "correctOption": "A short period"
     }
   ]
 }
