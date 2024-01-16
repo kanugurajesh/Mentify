@@ -24,6 +24,10 @@ An Innovative AI-powered solution that addresses critical challenges in Healthca
 - Blog related to mental health
 - Contact system to get help
 - Good Authentication system
+- Promoting Mental health throught interactive elements like (panda) and providing award system based on their precautions and approach towards the mental condition
+- Personlized health recommendation based on their precautions and appraoch towards the mental condition
+- Personalized health recommendation and question anwering based on their medical history and health realated documents
+- Leveraging the power of llms to provide latest information
 
 ## Project Setup
 
