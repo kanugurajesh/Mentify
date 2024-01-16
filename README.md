@@ -121,9 +121,11 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 <p align=center>Panda smiles if you are following the correct steps and proper cure</p>
 
-![Screenshot 2024-01-16 213454](https://github.com/kanugurajesh/Mentify/assets/77529419/658df41d-73fa-4b20-bfed-a1db693af61c)
+![Screenshot 2024-01-17 005637](https://github.com/kanugurajesh/Mentify/assets/77529419/911b01a7-bf9b-4f8c-b542-d2a3144fdf57)
 
 <p align=center>Panda gets sad when you are following wrong steps and further deteriorating your health</p>
+
+![Screenshot 2024-01-17 005644](https://github.com/kanugurajesh/Mentify/assets/77529419/31358831-ce27-4c37-9323-2436f93eb9af)
 
 <p align=center>Reward System and personalized health recommendation based on your test results</p>
 
