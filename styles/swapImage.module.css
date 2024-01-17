@@ -49,6 +49,10 @@
     width: 100%;
 }
 
+.receivedEmail {
+    float: right;
+}
+
 .button:hover {
     background-color: #e84949;
     color: black;
