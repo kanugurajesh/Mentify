@@ -8,7 +8,7 @@ import { UploadButton } from "@/utils/uploadthing";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { BeatLoader } from "react-spinners";
-import styles from "@/styles/Root.module.css";
+import styles from "@/styles/swapImage.module.css";
 
 export default function Home() {
 
@@ -59,6 +59,17 @@ export default function Home() {
         }
     };
 
+    const handleEmailReceive = () => {
+        if(!receivedEmail) {
+            toast.success("Email receive is enabled")
+        } else {
+            toast.error("Email receive is disabled")
+        }
+
+        setReceivedEmail(!receivedEmail)
+
+    }
+
     useEffect(() => {
 
         if (imageURl) {
@@ -103,8 +114,8 @@ export default function Home() {
             <Toaster />
             {!imageURl ? (
                 <main className="flex min-h-screen w-full flex-col items-center justify-center px-4 md:p-8 relative">
-                    <div className={`${styles.toggleButton} ${receivedEmail ? styles.receivedEmail : ""}`} onClick={() => setReceivedEmail(!receivedEmail)}>
-                        <div>
+                    <div className={`${styles.toggleButton}`} onClick={handleEmailReceive}>
+                        <div className={`${receivedEmail ? styles.receivedEmail : ""}`}>
                         </div>
                     </div>
                     <Head>
