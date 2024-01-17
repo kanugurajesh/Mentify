@@ -23,6 +23,7 @@ export default function Home() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
+        
         try {
 
             if (!selectedFile) {
