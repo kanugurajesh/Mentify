@@ -6,33 +6,85 @@
   <img src="https://github.com/kanugurajesh/Mentify/assets/77529419/ee204ef3-64de-44fa-85ab-3764c4196b03" width=150 height=150>
 </div>
 
-## Project Moto
-An Innovative AI-powered solution that addresses critical challenges in Healthcare and Well-Being. This advanced system has the capability to continuously gather and analyze a diverse array of healthcare data while promoting healthy lifestyles and wellness practices. This application achieves following objectives:
+<br>
 
-- Personalized Healthcare:
-- Mental Health Support:
-- Health Equity:
-- Wellness Promotion:
+# Project Moto 🚀
+
+Welcome to Project Moto, an innovative AI-powered solution revolutionizing healthcare and well-being. Our advanced system is designed to tackle critical challenges by continuously gathering and analyzing diverse healthcare data while promoting healthy lifestyles and wellness practices. 🏥💻
+
+## Objectives:
+
+### 1. Personalized Healthcare 🌐
+Empower individuals with personalized healthcare solutions tailored to their unique needs. Our AI-driven technology ensures that healthcare recommendations are specific and effective, enhancing overall well-being.
+
+### 2. Mental Health Support 💭
+Prioritize mental health by incorporating cutting-edge AI algorithms to provide timely and personalized mental health support. We aim to break barriers and foster a supportive environment for mental well-being.
+
+### 3. Health Equity 🌍
+Addressing disparities in healthcare access and outcomes is at the core of Project Moto. Our system works towards achieving health equity by considering diverse demographic factors and ensuring fair distribution of resources and support.
+
+### 4. Wellness Promotion 🏋️‍♂️
+Promote and encourage healthy lifestyles through data-driven insights and personalized wellness plans. Project Moto is committed to empowering users to make informed choices that contribute to their overall health and happiness.
 
 ## Features
 
-- Mental health evaluation
-- Mental health guidance
-- Chat Councillar
-- Virtual Therapist
-- Swap Image to improve imagination
-- Blog related to mental health
-- Contact system to get help
-- Good Authentication system
-- Promoting Mental health throught interactive elements like (panda) and providing award system based on their precautions and approach towards the mental condition
-- Personlized health recommendation based on their precautions and appraoch towards the mental condition
-- Personalized health recommendation and question anwering based on their medical history and health realated documents
-- Leveraging the power of llms to provide latest information
-- Tests to predict mental condition and it's current stage
-- Using Image Rekog to predict the disease by providing the photos of it's symptoms or also getting information about a medicinal drug from it's photo
-- Dark white mode toggle
-- The llm model used in the application can be trained easily through makersuite making it flexible and powerful
-- Information is always updated because we are using gemini pro which has access to internet due to which the system provides correct and quality responses.
+### 1. Virtual Therapy 🤖🗣️
+
+Connect with our Chat Counselor, your virtual therapist, for personalized mental health sessions. Discuss your thoughts and feelings in a safe and supportive environment.
+
+### 2. Imagination Enhancement 🌌🔄
+
+Boost your creativity by swapping images to stimulate your imagination. Unleash your mind's potential and explore new perspectives.
+
+### 3. Mental Health Blog 📚🧘‍♂️
+
+Stay informed and inspired with our blog. Read insightful articles on mental health, coping mechanisms, and success stories. Join the conversation and share your thoughts!
+
+### 4. Contact System 📞💬
+
+Reach out for help easily with our integrated contact system. Connect with professionals or support groups to get the assistance you need.
+
+### 5. Robust Authentication 🔒🛡️
+
+Rest easy knowing your data is secure. Our strong authentication system ensures your privacy is prioritized.
+
+### 6. Interactive Elements 🐼🌟
+
+Meet our friendly panda mascot and earn awards based on your proactive approach to mental health. Engage with interactive elements to make your mental health journey enjoyable.
+
+### 7. Personalized Recommendations 📋💡
+
+Receive tailored health recommendations based on your precautions and approach towards mental well-being. Our system adapts to your unique needs.
+
+### 8. Health History Integration 📂🩺
+
+Answer questions and receive personalized recommendations based on your medical history and health-related documents. Your journey, your way.
+
+### 9. LLMs for Latest Information 🧠📚
+
+Leverage the power of Large Language Models (LLMs) to access the latest information on mental health. Stay updated with accurate and relevant content.
+
+### 10. Mental Health Tests 📊🧐
+
+Take tests designed to predict your mental condition and its current stage. Gain insights into your emotional well-being and track your progress.
+
+### 11. Image Recognition for Health 📸💊
+
+Use Image Recognition to predict diseases by providing photos of symptoms. Obtain information about medicinal drugs from images. Empower yourself with visual health insights.
+
+### 12. Dark & Light Modes 🌗🌓
+
+Toggle between dark and light modes for a personalized visual experience. Choose what suits your mood and enhances your interaction with the platform.
+
+### 13. Flexible Training with Makersuite 🛠️🔄
+
+Easily train the LLM model through Makersuite, making our platform flexible and powerful. Customize your experience to match your evolving needs.
+
+### 14. Gemini Pro for Updated Information 🌐🔄
+
+Access the internet seamlessly with Gemini Pro to ensure our system provides correct and quality responses. Stay informed with real-time data.
+
+<br>
 
 ## Project Setup
 
@@ -116,11 +168,11 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 <p align=center>Response from the llm</p>
 
-![Screenshot 2024-01-16 213425](https://github.com/kanugurajesh/Mentify/assets/77529419/94a0334c-0435-4875-9e0c-a805c5a906d9)
+![Screenshot 2024-01-17 012938](https://github.com/kanugurajesh/Mentify/assets/77529419/3f9e6d11-ec5e-4078-875a-b596e0bc2fa9)
 
 <p align=center>Mental health test with a interactive panda to make it look good and also promote good mental steps through it's expressions</p>
 
-![Screenshot 2024-01-16 213448](https://github.com/kanugurajesh/Mentify/assets/77529419/228e51a8-d103-4e6a-8b0b-31421d4b0f8a)
+![Screenshot 2024-01-17 011453](https://github.com/kanugurajesh/Mentify/assets/77529419/7fdf15cf-5e81-42db-b76d-c510152db573)
 
 <p align=center>Panda smiles if you are following the correct steps and proper cure</p>
 
