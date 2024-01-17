@@ -103,8 +103,8 @@ export default function Home() {
             <Toaster />
             {!imageURl ? (
                 <main className="flex min-h-screen w-full flex-col items-center justify-center px-4 md:p-8 relative">
-                    <div className={`${styles.toggleButton} ${receivedEmail ? styles.receivedEmail : ""}`} onClick={() => setReceivedEmail(!receivedEmail)}>
-                        <div>
+                    <div className={`${styles.toggleButton}`} onClick={() => setReceivedEmail(!receivedEmail)}>
+                        <div className={`${receivedEmail ? styles.receivedEmail : ""}`}>
                         </div>
                     </div>
                     <Head>
