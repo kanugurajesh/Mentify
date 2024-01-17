@@ -23,7 +23,7 @@ export default function Home() {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-        
+
         try {
 
             if (!selectedFile) {
@@ -59,6 +59,7 @@ export default function Home() {
             setImageURl(response.imageURl);
 
         } catch (err) {
+            console.error(err);
             toast.error("Something went wrong");
         }
     };
