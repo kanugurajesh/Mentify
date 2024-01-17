@@ -191,6 +191,9 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 ![Screenshot 2024-01-17 003849](https://github.com/kanugurajesh/Mentify/assets/77529419/ca29b6de-59a3-4ce3-b451-061083be1bb8)
 
 ## Demo
+
+[![Mentify Demo](https://img.youtube.com/vi/1jk-MocZ1vI/0.jpg)](https://www.youtube.com/watch?v=1jk-MocZ1vI)
+
 ### Click on the below image to see the video
 
 ## Contribution Guidelines
