@@ -8,7 +8,7 @@ import { UploadButton } from "@/utils/uploadthing";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { BeatLoader } from "react-spinners";
-import styles from "@/styles/Root.module.css";
+import styles from "@/styles/swapImage.module.css";
 
 export default function Home() {
 
