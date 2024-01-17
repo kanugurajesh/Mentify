@@ -59,6 +59,17 @@ export default function Home() {
         }
     };
 
+    const handleEmailReceived = () => {
+        if(!receivedEmail) {
+            toast.success("Email receive is enabled");
+        } else {
+            toast.error("Email receive is disabled");
+        }
+
+        setReceivedEmail(!receivedEmail);
+
+    }
+
     useEffect(() => {
 
         if (imageURl) {
