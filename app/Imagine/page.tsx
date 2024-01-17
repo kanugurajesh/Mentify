@@ -47,15 +47,18 @@ export default function Home() {
 
             const response = await data.json();
 
+            console.log(response);
+
             if (response.error) {
-                return toast.error(response.error);
+                toast.error(response.error);
+                return;
             }
 
             // 👇🏻 set image url
             setImageURl(response.imageURl);
 
         } catch (err) {
-            console.error({ err });
+            toast.error("Something went wrong");
         }
     };
 
