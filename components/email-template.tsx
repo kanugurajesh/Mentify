@@ -1,14 +1,14 @@
 import * as React from 'react';
 
 interface EmailTemplateProps {
-    imageUrl: string;
+  imageURl: string;
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  imageUrl,
+  imageURl,
 }) => (
   <div>
-    <h1>Here is your image!</h1>
-    <img src={imageUrl} alt="Generated Image" />
+    <h1>Here is your image</h1>
+    <img src={imageURl} alt="image" />
   </div>
 );

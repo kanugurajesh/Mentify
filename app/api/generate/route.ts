@@ -10,16 +10,16 @@ export const GET = async () => {
 };
 
 export const POST = async (request: NextRequest) => {
-    
+
     // @ts-ignore
     const body = await request.json();
 
-    const { email, gender, userPrompt, selectedFile } = body;
+    const { gender, userPrompt, selectedFile } = body;
 
     const prompt = userPrompt ? userPrompt : `Generate a image of a ${gender}`;
 
     const imageGeneration = await replicate.run(
-        "stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b",
+        "stability-ai/stable-diffusion:ac732df83cea7fff18b8472768c88ad041fa750ff7682a21affe81863cbe77e4",
         {
             input: {
                 prompt: prompt,
@@ -33,8 +33,6 @@ export const POST = async (request: NextRequest) => {
 
     // @ts-ignore
     const image = imageGeneration[0];
-
-    // console.log(image);
 
     const SwapImage = await replicate.run(
         "yan-ops/face_swap:d5900f9ebed33e7ae08a07f17e0d98b4ebc68ab9528a70462afc3899cfe23bab",
@@ -55,9 +53,7 @@ export const POST = async (request: NextRequest) => {
     }
 
     // @ts-ignore
-    const swapppedImage = SwapImage.image;
-
-    // console.log(swapppedImage);
+    const swapppedImage = SwapImage.image as string;
 
     return NextResponse.json({ imageURl: swapppedImage }, { status: 200 })
 };
