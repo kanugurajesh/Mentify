@@ -84,6 +84,12 @@ export default function Home() {
     fileInputEl.click();
   }
 
+  const OnEnter = (e: any) => {
+    if (e.key === "Enter") {
+      handleClick();
+    }
+  }
+
   return (
     <main className="flex flex-col gap-5 justify-center items-center h-screen overflow-y-scroll">
       <Toaster />
@@ -108,7 +114,7 @@ export default function Home() {
               <BeatLoader color="black" loading={true} size={5} className="absolute top-[9px] right-2 hover:scale-110 transition-all ease-in-out" />
             </button>
           ) : (
-            <Image src="/send.svg" alt="" className="absolute top-[9px] right-2 hover:scale-110 transition-all ease-in-out" width={25} height={25} onClick={handleClick} />
+            <Image src="/send.svg" alt="" className="absolute top-[9px] right-2 hover:scale-110 transition-all ease-in-out" width={25} height={25} onClick={handleClick} onKeyDown={OnEnter}/>
           )}
         </div>
       )}
