@@ -70,8 +70,19 @@ export default function Home() {
     });
 
     const data = await response.json();
-    setOutput(data.text);
+
+    if (data.error) {
+      toast.error(data.error);
+      return;
+    }
+
+    if (data.text === "") {
+      toast.error("No response from the server!");
+      return;
+    }
+
     setLoading(false);
+    setOutput(data.text);
   }
 
   const handlePromptChange = (e: any) => {
