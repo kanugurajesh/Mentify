@@ -9,10 +9,13 @@ import React from 'react'
 import { Button } from "@/components/ui/button";
 import styles from '@/styles/styles.module.css'
 import "@/styles/LoginFormComponent.css";
+import toast, { Toaster } from "react-hot-toast";
+import { BeatLoader } from "react-spinners";
 
 export default function Page({ params }: { params: { name: string } }) {
 
     const name = params.name;
+    const [loading, setLoading] = useState(false);
     
     // const [image, setImage] = useState("");
 
@@ -43,6 +46,11 @@ export default function Page({ params }: { params: { name: string } }) {
         // clear the output
         setOutput("The response will appear here...");
 
+        toast.success("Creating a response for what causes and cure for " + name);
+
+        // set the loading state to true
+        setLoading(true);
+
         // create a post request to the /api/chat endpoint
         const response = await fetch("/api/chat", {
             method: "POST",
@@ -56,6 +64,19 @@ export default function Page({ params }: { params: { name: string } }) {
 
         // get the response from the server
         const data = await response.json();
+
+        setLoading(false);
+
+        if (data.error) {
+            toast.error(data.error);
+            return;
+        }
+
+        if (data.text === "") {
+            toast.error("No response from the server!");
+            return;
+        }
+
         // set the response in the state
         setResponse(data.text);
     };
@@ -76,6 +97,7 @@ export default function Page({ params }: { params: { name: string } }) {
 
     return (
         <div>
+            <Toaster />
             <div className='flex flex-col items-center h-screen gap-6'>
                 <h1 className='text-4xl font-extrabold mt-1'>{name}</h1>
                 {/* {image && <Image src={image} alt="image" width={300} height={300} />} */}
@@ -85,10 +107,16 @@ export default function Page({ params }: { params: { name: string } }) {
                         <Markdown className={cn("w-full h-full ")}>{`${output}`}</Markdown>
                     </div>
                 </Card>
-                <Button onClick={() => {
-                    onSubmit();
-                    // getImage(name);
-                }}>Get Details</Button>
+                {loading ? (
+                    <Button>
+                        <BeatLoader color="white" size={8} />
+                    </Button>
+                ): (
+                    <Button onClick={() => {
+                        onSubmit();
+                        // getImage(name);
+                    }}>Get Details</Button>
+                )}
             </div>
         </div>
     )
