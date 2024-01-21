@@ -209,7 +209,7 @@ export default function Home() {
               <span>Your avatar has been sent to your email address</span>
             ) : (
               <span>
-                {receivedEmail && <BeatLoader size={8} color="black" />}
+                {receivedEmail ? <BeatLoader size={8} color="black" /> : "your image has been generated"}
               </span>
             )}
           </p>
