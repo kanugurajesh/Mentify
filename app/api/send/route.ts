@@ -6,19 +6,22 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   const reqBody = await request.json();
-  const { imageURl, sendTo } = reqBody;
+  const { imageURl, email } = reqBody;
 
   try {
     // @ts-ignore
     const data = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: sendTo as string,
+      to: email as string,
       subject: "Your avatar is ready! 🌟🤩",
       react: EmailTemplate({ imageURl: imageURl }),
     });
 
+    console.log(data);
+
     return Response.json(data);
   } catch (error) {
+    console.log(error);
     return Response.json({ error });
   }
 }

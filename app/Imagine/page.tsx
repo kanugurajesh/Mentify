@@ -78,6 +78,7 @@ export default function Home() {
     }
 
     const sendEmail = async () => {
+
       try {
         const emailRes = await fetch(`/api/send`, {
           method: "POST",
@@ -85,20 +86,23 @@ export default function Home() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            sendTo: email,
+            email: email,
             imageURl: imageURl,
           }),
         });
 
         const emailResponse = await emailRes.json();
 
+        console.log(emailResponse);
+
         if (emailResponse.error) {
-          return toast.error(emailResponse.error);
+          return toast.error("error in email response")
         }
 
         setEmailSent(true);
 
         toast.success("Email sent successfully!");
+
       } catch (err) {
         toast.error("Something went wrong");
       }

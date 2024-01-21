@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Image from 'next/image';
 
 interface EmailTemplateProps {
   imageURl: string,
@@ -16,7 +15,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 }) => (
   <div>
     <h1>Here is your image</h1>
-    <Image src={imageURl} alt="image" width={500} height={500} />
+    <img src={imageURl} alt="image"/>
   </div>
 );
 
