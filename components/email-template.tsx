@@ -6,8 +6,8 @@ interface EmailTemplateProps {
 }
 
 interface ContactEmailTemplateProps {
+  name: string,
   email: string,
-  subject: string,
   message: string
 }
 
@@ -22,12 +22,12 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 );
 
 export const ContactEmailTemplate: React.FC<Readonly<ContactEmailTemplateProps>> = ({
-  email, subject, message
+  name, email, message
 }) => (
   <div>
     <h1>You got a message from Mentify</h1>
+    <h2>Name is {name}</h2>
     <h2>Email is {email}</h2>
-    <h2>Subject is {subject}</h2>
     <h2>Message is {message}</h2>
   </div>
 );

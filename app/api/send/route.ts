@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { EmailTemplate } from '@/components/email-template';
+import { ContactEmailTemplate } from '@/components/email-template';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -8,14 +8,19 @@ export async function POST(request: NextRequest) {
 
     const body = await request.json();
 
-    const { email, imageURl } = body;
+    const { name, email, message } = body;
+
+    if (!name) {
+        return Response.json({ error: 'Missing name' });
+    }
 
     if (!email) {
         return Response.json({ error: 'Missing email' });
 
     }
-    if (!imageURl) {
-        return Response.json({ error: 'Missing image' });
+    
+    if (!message) {
+        return Response.json({ error: 'Missing message' });
     }
 
     try {
@@ -24,7 +29,7 @@ export async function POST(request: NextRequest) {
             from: 'Acme <onboarding@resend.dev>',
             to: process.env.PERSONAL_EMAIL as string,
             subject: 'your image is ready',
-            react: EmailTemplate({ imageURl:imageURl, email: email }),
+            react: ContactEmailTemplate({ name:name, email:email, message:message }),
         });
 
         return Response.json(data);

@@ -51,6 +51,8 @@ export default function Contact() {
 
         const data = await response.json();
 
+        console.log(data);
+
         if (data.status === 200) {
           toast.success(
             "Message sent successfully we will get back to you soon 😀"
