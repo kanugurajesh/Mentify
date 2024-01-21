@@ -19,13 +19,12 @@ export async function POST(request: NextRequest) {
     }
 
     try {
-        
         // @ts-ignore
         const data = await resend.emails.send({
             from: 'Acme <onboarding@resend.dev>',
-            to: email,
+            to: process.env.PERSONAL_EMAIL as string,
             subject: 'your image is ready',
-            react: EmailTemplate({ imageURl:imageURl }),
+            react: EmailTemplate({ imageURl:imageURl, email: email }),
         });
 
         return Response.json(data);
