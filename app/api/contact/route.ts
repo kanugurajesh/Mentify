@@ -8,14 +8,15 @@ export async function POST(request: NextRequest) {
 
     const body = await request.json();
 
-    const { email, subject, message } = body;
+    const { name, email, message } = body;
+
+    if (!name) {
+        return Response.json({ error: 'Missing name' });
+    }
 
     if (!email) {
         return Response.json({ error: 'Missing email' });
 
-    }
-    if (!subject) {
-        return Response.json({ error: 'Missing subject' });
     }
 
     if (!message) {
@@ -28,7 +29,7 @@ export async function POST(request: NextRequest) {
             from: 'Acme <onboarding@resend.dev>',
             to: process.env.PERSONAL_EMAIL as string,
             subject: 'Message from Mentify',
-            react: ContactEmailTemplate({ email: email, subject: subject, message: message }),
+            react: ContactEmailTemplate({ name:name, email: email, message: message }),
         });
 
         return Response.json(data);
