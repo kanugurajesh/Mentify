@@ -53,7 +53,6 @@ export default function Home() {
 
       // 👇🏻 set image url
       setImageURl(response.imageURl);
-      console.log(response.imageURl);
     } catch (err) {
       toast.error("Something went wrong");
     }
@@ -92,8 +91,6 @@ export default function Home() {
         });
 
         const emailResponse = await emailRes.json();
-
-        console.log(emailResponse);
 
         if (emailResponse.error) {
           return toast.error("error in email response")

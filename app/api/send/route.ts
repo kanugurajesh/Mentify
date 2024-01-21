@@ -17,11 +17,8 @@ export async function POST(request: NextRequest) {
       react: EmailTemplate({ imageURl: imageURl }),
     });
 
-    console.log(data);
-
     return Response.json(data);
   } catch (error) {
-    console.log(error);
     return Response.json({ error });
   }
 }
