@@ -124,7 +124,7 @@ export default function Home() {
                         </div>
                     </div>
                     <Head>
-                        <title>Avatar Generator</title>
+                        <title>Imagine Yourself</title>
                     </Head>
                     <header className="mb-8 flex w-full flex-col items-center justify-center">
                         <h1 className="text-4xl font-bold">Avatar Generator</h1>
