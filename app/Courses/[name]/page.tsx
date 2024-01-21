@@ -40,6 +40,8 @@ export default function Page({ params }: { params: { name: string } }) {
         // clear the output
         setOutput("The response will appear here...");
 
+        toast.success("Based on the personality test we are creating a response to diagnose " + name);
+
         // create a post request to the /api/chat endpoint
         const response = await fetch("/api/chat", {
             method: "POST",
@@ -53,6 +55,20 @@ export default function Page({ params }: { params: { name: string } }) {
 
         // get the response from the server
         const data = await response.json();
+        
+        if (data.error) {
+            toast.error(data.error)
+            return
+        }
+
+        if (data.text == "") {
+            toast.error("No response from the server, please try again")
+        }
+        
+        if (data.text.includes("Sorry I don't understand")) {
+            toast.error("Sorry I don't understand, please try again")
+            return
+        }
 
         // set the response in the state
         setResponse(data.text);
