@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
+import { BeatLoader } from "react-spinners";
 
 export default function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   // create a function to validate the email
   const validateEmail = (email: string) => {
@@ -37,6 +39,9 @@ export default function Contact() {
   const handleSubmit = async () => {
     if (validateForm()) {
       try {
+
+        setLoading(true);
+
         const response = await fetch("/api/contact", {
           method: "POST",
           headers: {
@@ -51,13 +56,15 @@ export default function Contact() {
 
         const data = await response.json();
 
-        console.log(data);
+        setLoading(false);
 
-        if (data.status === 200) {
-          toast.success(
-            "Message sent successfully we will get back to you soon 😀"
-          );
+        if (data.error) {
+          toast.error(data.error);
+          return;
         }
+
+        toast.success("Message sent successfully")
+
       } catch (error) {
         toast.error("Something went wrong please try again later");
       }
@@ -208,10 +215,10 @@ export default function Contact() {
         <div>
           {/* @ts-ignore */}
           <button
-            className="w-full font-bold bg-black hover:bg-white hover:text-black text-white px-5 py-3 rounded-md border border-2 transition ease-in-out mb-10 lg:mb-0"
+            className="w-full font-bold bg-black text-white px-5 py-3 rounded-md border border-2 transition ease-in-out mb-10 lg:mb-0"
             onClick={() => handleSubmit()}
           >
-            Send Message
+            {loading ? <BeatLoader size={8} color="white" /> : "Send Message"}
           </button>
         </div>
       </div>
