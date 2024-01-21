@@ -53,6 +53,7 @@ export default function Home() {
 
       // 👇🏻 set image url
       setImageURl(response.imageURl);
+      console.log(response.imageURl);
     } catch (err) {
       toast.error("Something went wrong");
     }
@@ -196,20 +197,26 @@ export default function Home() {
         </main>
       ) : (
         <div className="min-h-screen w-full flex flex-col items-center justify-center">
-          <Image
-            src={imageURl}
-            width={200}
-            height={200}
-            alt="image"
-            className="mb-10"
-          />
+          {imageURl && (
+            <Image
+              src={imageURl}
+              width={200}
+              height={200}
+              alt="image"
+              className="mb-10"
+            />
+          )}
           <h2 className="font-bold text-3xl mb-2">Thank you! 🌟</h2>
           <p className="mb-4 text-center">
             {emailSent ? (
               <span>Your avatar has been sent to your email address</span>
             ) : (
               <span>
-                {receivedEmail ? <BeatLoader size={8} color="black" /> : "your image has been generated"}
+                {receivedEmail ? (
+                  <BeatLoader size={8} color="black" />
+                ) : (
+                  <p>your image has been generated</p>
+                )}
               </span>
             )}
           </p>
