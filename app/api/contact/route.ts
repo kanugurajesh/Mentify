@@ -1,0 +1,38 @@
+import { NextRequest } from 'next/server';
+import { ContactEmailTemplate } from '@/components/email-template';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST(request: NextRequest) {
+
+    const body = await request.json();
+
+    const { email, subject, message } = body;
+
+    if (!email) {
+        return Response.json({ error: 'Missing email' });
+
+    }
+    if (!subject) {
+        return Response.json({ error: 'Missing subject' });
+    }
+
+    if (!message) {
+        return Response.json({ error: 'Missing message' });
+    }
+
+    try {
+        // @ts-ignore
+        const data = await resend.emails.send({
+            from: 'Acme <onboarding@resend.dev>',
+            to: process.env.PERSONAL_EMAIL as string,
+            subject: 'Message from Mentify',
+            react: ContactEmailTemplate({ email: email, subject: subject, message: message }),
+        });
+
+        return Response.json(data);
+    } catch (error) {
+        return Response.json({ error });
+    }
+}
