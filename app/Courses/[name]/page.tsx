@@ -154,7 +154,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 setQuestion(content?.questions[0]);
                 setContent(content);
             } catch (error) {
-                console.error("Error reading file:", error);
+                toast.error("Error reading file")
             }
         };
         fetchData();

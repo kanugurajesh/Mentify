@@ -46,8 +46,6 @@ export default function Home() {
 
       const response = await data.json();
 
-      console.log(response);
-
       if (response.error) {
         toast.error(response.error);
         return;
@@ -56,7 +54,6 @@ export default function Home() {
       // 👇🏻 set image url
       setImageURl(response.imageURl);
     } catch (err) {
-      console.error(err);
       toast.error("Something went wrong");
     }
   };
@@ -80,9 +77,7 @@ export default function Home() {
     }
 
     const sendEmail = async () => {
-
       try {
-
         const emailRes = await fetch(`/api/send`, {
           method: "POST",
           headers: {
@@ -97,16 +92,13 @@ export default function Home() {
         const emailResponse = await emailRes.json();
 
         if (emailResponse.error) {
-          console.error({ emailResponse });
           return toast.error(emailResponse.error);
         }
 
         setEmailSent(true);
 
         toast.success("Email sent successfully!");
-
       } catch (err) {
-        console.error(err);
         toast.error("Something went wrong");
       }
     };

@@ -108,7 +108,6 @@ export default function Home() {
     const chatHistory = localStorage.getItem('chatHistory')
     if (chatHistory) {
       setChatHistory(() => JSON.parse(chatHistory))
-      console.log(chatHistory)
     }
   }, [])
 

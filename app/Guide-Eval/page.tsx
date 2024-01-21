@@ -30,8 +30,6 @@ export default function Career() {
 
         readFile("career")
 
-        console.log(careerDescription)
-
         setSelectedCareer(customValue)
 
         // remove all selected classes
@@ -41,7 +39,6 @@ export default function Career() {
             image.classList.remove(`${styles.imageSelected}`);
         });
 
-        console.log(customValue)
         // add selected class to clicked image
         e.target.classList.add(`${styles.imageSelected}`);
     }
