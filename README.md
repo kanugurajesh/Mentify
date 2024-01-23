@@ -192,9 +192,9 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ## Demo
 
-### Click on the below image to see the video
-
-[![Mentify Demo](https://img.youtube.com/vi/1jk-MocZ1vI/0.jpg)](https://www.youtube.com/watch?v=1jk-MocZ1vI)
+<a href="https://www.youtube.com/watch?v=1jk-MocZ1vI">
+  <img src="https://github.com/kanugurajesh/Mentify/assets/77529419/239c0881-969d-4e30-94a9-b9d53c6fecdd" alt="mental health" width=400 height=300>
+</a>
 
 ## Contribution Guidelines
 
