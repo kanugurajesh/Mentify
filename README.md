@@ -192,9 +192,9 @@ docker run -d -p 3000:3000 --name your_container_name your_image_name:tag
 
 ## Demo
 
-[![Mentify Demo](https://img.youtube.com/vi/1jk-MocZ1vI/0.jpg)](https://www.youtube.com/watch?v=1jk-MocZ1vI)
-
 ### Click on the below image to see the video
+
+[![Mentify Demo](https://img.youtube.com/vi/1jk-MocZ1vI/0.jpg)](https://www.youtube.com/watch?v=1jk-MocZ1vI)
 
 ## Contribution Guidelines
 
