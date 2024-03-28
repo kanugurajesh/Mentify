@@ -10,7 +10,7 @@
 
 # Project Moto 🚀
 
-Welcome to Project Moto, an innovative AI-powered solution revolutionizing healthcare and well-being. Our advanced system is designed to tackle critical challenges by continuously gathering and analyzing diverse healthcare data while promoting healthy lifestyles and wellness practices. 🏥💻
+An AI-powered clinical trial matching application which takes basic diagnosis test and offers personalized medical path to improve mental health. It is also powered with Chat, Therapist etc. To promote mental well being.
 
 ## Objectives:
 
